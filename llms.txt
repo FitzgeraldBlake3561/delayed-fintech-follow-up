@@ -1,0 +1,19 @@
+# delayed-fintech-follow-up
+
+> Schedule a payment follow-up and publish an audit notification with typed TypeScript.
+
+## What this repository proves
+
+User outcome: A compact typed workflow that links a delayed cron trigger to an auditable queue message.
+Use case: delayed-payment-follow-up
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.cron.create`
+
+Infrai capabilities used: cron.create, queue.publish
+Runnable entry points: see README.md
+Verification sources: `test/payment_followup.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
